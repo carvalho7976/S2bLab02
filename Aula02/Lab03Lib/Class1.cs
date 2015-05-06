@@ -30,15 +30,15 @@ namespace Lab03Lib {
 
         public string Nome {
             get { return nome; }
-            set { nome = Nome; }
+            set { nome = value; }
         }
         public decimal Saldo {
             get { return saldo; }
-            set { saldo = Saldo; }
+            set { saldo = value; }
         }
         public DateTime Data {
             get { return data; }
-            set { data = Data; }
+            set { data = value; }
         }
     }
 }
