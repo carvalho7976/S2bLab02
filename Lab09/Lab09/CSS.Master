@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CSS.master.cs" Inherits="Lab09.CSS" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Estilos/ciStyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="conteudoTitulo">
+            <img src="Images/CI_logo.png"
+                alt="CI - PUCRS"
+                style="width: 180px; height: 40px" />
+        </div>
+        <div id="conteudoDireita">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="conteudoEsquerda">
+            <a href="Home.aspx">Home</a><br />
+            <a href="Centro.aspx">Centro de Inovação</a><br />
+            <a href="Azure.aspx">Windows Azure</a><br />
+            <a href="Cursos.aspx">Cursos</a><br />
+            <a href="Oportunidades.aspx">Cursos</a><br />
+        </div>
+    </form>
+</body>
+</html>

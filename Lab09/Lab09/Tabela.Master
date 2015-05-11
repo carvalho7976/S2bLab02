@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Tabela.master.cs" Inherits="Lab09.Tabela" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 1182px;
+            
+        }
+        body {
+            background-color: gray;
+            width: 1478px;
+        }
+        #menu {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+            <table id="menu">
+                <tr>
+                    <td>
+                        <img src="images/CI_logo.png" alt="CI" style="width: 242px; height: 95px" /> </td>
+                    <td>
+                        <table border="0" cellspacing="0" cellpadding="0" style="width: 100%">
+                            <tr>
+                                <td valign="top" class="auto-style1">
+                                    <p align="center">
+                                        <font face="Vendana" size ="2"><a href="Home.aspx">Home</a> <a href="Centro.aspx" id="centroLink" runat="server">Centro</a> <a href="Azure.aspx" id="azureLink" runat="server">Azure</a> <a href="Cursos.aspx" id="cursosLink" runat="server">Cursos</a> <a href="Oportunidades.aspx" id="oportunidadesLink" runat="server">Oportunidades</a> </font>
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style1">
+                                    <p align="center" style="width: 1230px">
+                                        <strong><em><font face="Vendana" size="5">Centro de inovacao - PUCRS</font></em></strong></p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
