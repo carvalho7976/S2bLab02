@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Lab14_classLibrary" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Lab14_classLibrary" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfJogoFutebol">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="JogoFutebol" nillable="true" type="tns:JogoFutebol" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfJogoFutebol" nillable="true" type="tns:ArrayOfJogoFutebol" />
+  <xs:complexType name="JogoFutebol">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="casa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="golCasa" type="xs:short" />
+      <xs:element minOccurs="0" name="golVisitante" type="xs:short" />
+      <xs:element minOccurs="0" name="visitante" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="JogoFutebol" nillable="true" type="tns:JogoFutebol" />
+</xs:schema>
